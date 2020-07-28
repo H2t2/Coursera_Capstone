@@ -23,4 +23,10 @@ The most simple approach would be to generate a data set of the top 100 restaura
 
 The first step is to generate a list of all cities in Orange County. The list can be found here: https://media.ocgov.com/about/infooc/links/oc/occities.asp. Pulling the list of cities out of the html can be done by hand, or with Python Library Beautiful Soup
 
+### City Data
 
+Since I believed there might be important details about each city which play a part in the quality of restaurants, I needed to find demographic data. I was able to pull 2019 census data from census.gov, utilizing their QuickFacts Page to get access to data that was most topical. 
+
+The Census Bereau has built a surprisingly good system, with an API that developers can use. However I did not use that system, since the data represented in the QuickFacts is strewn across multiple sources, I found it more prudent to use the QuickFacts system to generate data for the 34 cities in Orange County. The fun part aboout the QuickFacts system, was it was limited to showing 5 areas of interest, so I was required to build a reports of 5 cities each.
+
+It was only after I had finished, that I realized the reports could be generated using specific URLS...
