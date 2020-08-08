@@ -27,4 +27,4 @@ A problem with Fourquare's API is that each call is limited to 50 results. The l
 
 I chose to switch from Foursquare's API to Yelp's API, which has the ability "page" through the result set of 1000. Although Yelp's implementation is much like Foursquare's, using a search radius and having no way to strictly filter by city, I feel using Yelp is the better option. If the results mirror Foursqaure's by ratio, we would expect about 80 results located in Aliso Veijo, which allows a more level population of desired data across cities.
 
-The lingering problem of defining a proper radius of search still remains.
+The lingering problem with search radius can also be addressed by utilizing the API's sort_by parameter. Allowing the result set to be sorted by distance from city centers. The results can be offset or "paginated" until no more target city food locations remain.
